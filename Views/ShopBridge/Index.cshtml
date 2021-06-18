@@ -1,30 +1,30 @@
 ﻿@model IEnumerable<AsyncShopBridge.Models.ShopItem>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "ShopBridge";
 }
 
-<h2>Index</h2>
+<h2>ShopBridge Product List</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Add Product", "Create",null, new { @class = "btn btn-info" })
 </p>
 <div style="font-family:Arial">
-    <table class="table table-bordered table-dark">
-        <tr>
-            <th>
+    <table class="table table-bordered table-dark" >
+        <tr >
+            <th style="text-align:center">
                 <label>Name</label>
             </th>
-            <th>
+            <th style="text-align:center">
                 <label>Price</label>
             </th>
-            <th width="50%">
+            <th width="50%" style="text-align:center">
                 <label>Description</label>
             </th>
-            <th>
+            <th style="text-align:center">
                 <label>Quantity </label>
             </th>
-            <th>
+            <th style="text-align:center">
                 <label>Action</label>
             </th>
         </tr>
@@ -44,10 +44,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.productQuantity)
                 </td>
-                <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.Id }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.Id })
+                <td class="btn-toolbar">
+                    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" }) 
+                    @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-success"}) 
+                    @Html.ActionLink("Delete", "Delete", new { id = item.Id }, new { @class = "btn btn-danger" })
                 </td>
             </tr>
         }

@@ -30,6 +30,7 @@ namespace AsyncShopBridge.Controllers
 		{
 			if (ModelState.IsValid)
 			{
+				UpdateModel(shopItem);
 				shopBridgeContext.ShopItems.Add(shopItem);
 				await shopBridgeContext.SaveChangesAsync();
 				return RedirectToAction("Index");

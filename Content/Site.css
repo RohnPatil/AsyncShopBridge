@@ -15,3 +15,10 @@ select,
 textarea {
     max-width: 280px;
 }
+
+a.buttonStyle {
+    display: block;
+    width: 150px;
+    height: 150px;
+    text-indent: -9999px; /* hides the link text */
+}
