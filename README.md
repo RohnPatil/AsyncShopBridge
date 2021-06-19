@@ -16,3 +16,11 @@ across restarts of the backend process.
 -> All API calls should be asynchronous.
 -> Include data validations as and when needed.
 
+-------------SCREENSHOTS--------------------------
+![UpdatedProductListPage](https://user-images.githubusercontent.com/50226292/122645566-9ac66880-d138-11eb-80cb-b72653c234f0.JPG)
+![AddProductPageWithValidation](https://user-images.githubusercontent.com/50226292/122645589-b0d42900-d138-11eb-950d-c6d295621fe7.JPG)
+![AddProductDemo](https://user-images.githubusercontent.com/50226292/122645596-b5004680-d138-11eb-87a5-ea6cb42e4454.JPG)
+![EditPage](https://user-images.githubusercontent.com/50226292/122645610-c5b0bc80-d138-11eb-8c7b-7df3dfd1a415.JPG)
+![DeleteProductPage](https://user-images.githubusercontent.com/50226292/122645612-c9444380-d138-11eb-94c3-3f8ae4e771a8.JPG)
+![ProductDetailsPage](https://user-images.githubusercontent.com/50226292/122645613-cba69d80-d138-11eb-8f83-489b8f69d2ac.JPG)
+
