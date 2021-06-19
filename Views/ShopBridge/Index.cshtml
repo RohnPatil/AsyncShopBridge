@@ -1,6 +1,5 @@
 ﻿@model IEnumerable<AsyncShopBridge.Models.ShopItem>
-@using AsyncShopBridge.Models;
-@using MvcApplication8.Models;
+
 
 @{
     ViewBag.Title = "ShopBridge";
@@ -9,7 +8,7 @@
 <h2>ShopBridge Product List</h2>
 
 <p>
-    @Html.ActionLink("Add Product", "Create", null, new { @class = "btn btn-info" })
+    @Html.ActionLink("Add Product", "Create", null, new { @class = "btn btn-warning" })
 </p>
 <div style="font-family:Arial">
     <table class="table table-bordered table-hover">
@@ -29,9 +28,6 @@
                 </th>
                 <th scope="col" style="text-align:center">
                     <label>Quantity </label>
-                </th>
-                <th scope="col" style="text-align:center">
-                    <label>Image </label>
                 </th>
                 <th scope="col" style="text-align:center">
                     <label>Action</label>
@@ -56,9 +52,6 @@
                 </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.productQuantity)
-                </td>
-                <td>
-                    @Html.Image("/Images/1.png","alt","100")
                 </td>
                 <td style="text-align:justify" class="btn-toolbar">
                     @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" })
